@@ -44,7 +44,7 @@ Cada _issue_ [puede ser etiquetada](https://help.github.com/en/github/managing-y
 * **[rails](https://github.com/iic2143-2021-2/syllabus/labels/rails)**: preguntas relacionadas con Rails.
 * **[ayua](https://github.com/iic2143-2021-2/syllabus/labels/ayua)**: para preguntar sobre errores o bugs en código antes de caer en la desesperación (pero luego de haber buscado **apropiadamente** en Internet...)
 * **[misc](https://github.com/iic2143-2021-2/syllabus/labels/misc)**: para preguntas sobre temas que no parezcan pertenecer a ninguna de las categorías anteriores.
-* **[WSL](https://github.com/iic2143-2021-2/syllabus/labels/misc)**: para preguntar sobre problemas o dudas con WSL
+* **[WSL](https://github.com/iic2143-2021-2/syllabus/labels/wsl)**: para preguntar sobre problemas o dudas con WSL
 
 ### Procedimiento
 
