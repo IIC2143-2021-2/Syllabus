@@ -38,6 +38,7 @@ Cada _issue_ [puede ser etiquetada](https://help.github.com/en/github/managing-y
 * **[importante](https://github.com/iic2143-2021-2/syllabus/labels/importante)**: issues que **todos** los grupos deben leer
 * **[tarea](https://github.com/iic2143-2021-2/syllabus/labels/tarea)**: preguntas relacionadas con la tarea
 * **[resuelta](https://github.com/iic2143-2021-2/syllabus/labels/resuelta)**: issues resueltas
+* **[setup](https://github.com/iic2143-2021-2/syllabus/labels/setup)**: pregunta relacionada a la instalación para el curso
 * **[OS](https://github.com/iic2143-2021-2/syllabus/labels/OS)**: para preguntas sobre el sistema operativo (máquinas virtuales, particiones, etc...).
 * **[postgres](https://github.com/iic2143-2021-2/syllabus/labels/postgres)**: para preguntas sobre la base de datos.
 * **[proyecto](https://github.com/iic2143-2021-2/syllabus/labels/proyecto)**: sobre el enunciado o situación relacionada a alguna entrega de proyecto.
