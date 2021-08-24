@@ -31,7 +31,7 @@ En este repositorio podrás encontrar:
 | José Miguel Quintana| josemiguelquinta@uc.cl | [@josemquinta15](https://github.com/josemquinta15)                 |
 | Josefa España       | jpespana@uc.cl         | [@JosefaPaz](https://github.com/JosefaPaz)                         |
 | Maggie Muñoz        | maggie.munoz@uc.cl     | [@maggiemunoz](https://github.com/maggiemunoz)                     |
-| Martín Orrego       | martinorregosilva@uc.cl| [@OrregloSilva](https://github.com/OrregloSilva)                   |
+| Martín Orrego       | martinorregosilva@uc.cl| [@OrregoSilva](https://github.com/OrregoSilva)                     |
 | Miguel Ortiz        | miortiz1@uc.cl         | [@miortiz1](https://github.com/miortiz1)                           |
 | Moisés Retamal      | meretamal@uc.cl        | [@meretamal](https://github.com/meretamal)                         |
 | Nicole Caballero    | nicole.caballero@uc.cl | [@nicolecll](https://github.com/nicolecll)                         |
