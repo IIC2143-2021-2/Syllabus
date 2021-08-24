@@ -22,8 +22,27 @@ En este repositorio podrás encontrar:
 ## Ayudantes
 | Nombre              | Email                  | Github                                                             |
 |---------------------|------------------------|--------------------------------------------------------------------|
+| Alfredo Mahns       | amahns1@uc.cl          | [@Amahns1](https://github.com/Amahns1)                             |
+| Catalina Ramírez    | catalina.ramrez@uc.cl  | [@catalina-ramirez](https://github.com/catalina-ramirez)           |
+| Constanza Ortiz     | constanza.ortiz@uc.cl  | [@conyortizsimpson](https://github.com/conyortizsimpson)           |
+| Domingo Edwards     | domingo.edwards@uc.cl  | [@domingo2000](https://github.com/domingo2000)                     |
+| Fabian Estelle      | famunozb@uc.cl         | [@festelle](https://github.com/festelle)                           |
+| Felipe Fuentes      | ffuentep@uc.cl         | [@felipefuentesporras](https://github.com/felipefuentesporras)     |
+| José Miguel Quintana| josemiguelquinta@uc.cl | [@josemquinta15](https://github.com/josemquinta15)                 |
 | Josefa España       | jpespana@uc.cl         | [@JosefaPaz](https://github.com/JosefaPaz)                         |
+| Maggie Muñoz        | maggie.munoz@uc.cl     | [@maggiemunoz](https://github.com/maggiemunoz)                     |
+| Martín Orrego       | martinorregosilva@uc.cl| [@OrregloSilva](https://github.com/OrregloSilva)                   |
+| Miguel Ortiz        | miortiz1@uc.cl         | [@miortiz1](https://github.com/miortiz1)                           |
 | Moisés Retamal      | meretamal@uc.cl        | [@meretamal](https://github.com/meretamal)                         |
+| Nicole Caballero    | nicole.caballero@uc.cl | [@nicolecll](https://github.com/nicolecll)                         |
+| Oreste Mosciatti    | oreste.mosciatti@uc.cl | [@oretmj](https://github.com/oretmj)                               |
+| Pablo Dominguez     | pablo.dominguez@uc.cl  | [@PDominguezW](https://github.com/PDominguezW)                     |
+| Pablo Kipreos       | pjkipreos@uc.cl        | [@Pablok98](https://github.com/Pablok98)                           |
+| Sebastián Breguel   | sebabreguel@uc.cl      | [@Sebastianbreguel](https://github.com/Sebastianbreguel)           |
+| Sebastián Ramos     | ramos.sebastian1@uc.cl | [@tatanramos](https://github.com/tatanramos)                       |
+| Ziqi Yan            | zyan@uc.cl             | [@chineseJack564](https://github.com/chineseJack564)               |
+
+
 
 ## Foro
 
