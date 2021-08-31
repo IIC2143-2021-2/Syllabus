@@ -1,0 +1,17 @@
+COMIENZA INFORMACION MESAS
+1 Moises Retamal Ignacio Milen Rodrigo
+8 Martin Orrego Ian Matias Sofia
+10 Constanza Ortiz Alexander Hernan Raimundo
+11 Alfredo Mahns Cristobal Maite Tamara
+TERMINA INFORMACION MESAS
+COMIENZA GENERAR BOLETAS
+1 Ignacio 20324 Milen 27030 Rodrigo 20763
+8 Ian 10338 Matias 28865 Sofia 22689
+10 Alexander 15786 Hernan 29045 Raimundo 9414
+11 Cristobal 8564 Maite 18959 Tamara 31859
+TERMINA GENERAR BOLETAS
+COMIENZA TOP MESEROS
+1 9970
+3 11123
+4 9536
+TERMINA TOP MESEROS
