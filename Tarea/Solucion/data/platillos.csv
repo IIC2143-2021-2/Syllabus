@@ -1,0 +1,37 @@
+id,nombre,precio
+1,Jquery Ui Rails,8396
+2,Devise i18n,1101
+3,Rails Controller Testing,10433
+4,Rails i18n,10647
+5,Faker,9595
+6,CarrierWave,5580
+7,Nokogiri,10565
+8,accounting JS Rails,4344
+9,Chartkick,3814
+10,Factory Bot Rails,2337
+11,Regex Concat,14351
+12,Resque,9784
+13,Will_paginate,5813
+14,RMagick,14680
+15,Capybara,14103
+16,Awesome Print,8195
+17,Bundler,4949
+18,Callisto,12689
+19,Annotate,3182
+20,backaid,11049
+21,Capistrano,12457
+22,Excon,10495
+23,OmniAuth,14570
+24,Authlogic,6286
+25,Rspec Rails,10346
+26,SimpleCov,9398
+27,Geocoder,11169
+28,Sass,10589
+29,Kaminari,12833
+30,HAML,10374
+31,Devise,12072
+32,Cancan,12788
+33,Easycrumbs,12497
+34,Rolify,5235
+35,Formtastic,10369
+36,Shoulda,8558
