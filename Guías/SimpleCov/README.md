@@ -46,48 +46,49 @@ La idea de `SimpleCov` es que, cada vez que se ejecute la _suite_ de tests, se g
     $ bundle install
     ```
 
-3. "Explicarle" a `RSpec` que debe generar un reporte con `SimpleCov` cada vez que se ejecuta la _suite_ de tests. Para eso, se debe editar el archvio `spec/spec_helper.rb` y agregarle **al principio del archivo** lo siguiente:
+3. "Explicarle" a `RSpec` que debe generar un reporte con `SimpleCov` cada vez que se ejecuta la _suite_ de tests. Para eso, se debe editar el archvio `spec/rails_helper.rb` y agregarle **al principio del archivo** lo siguiente:
 
     ```rb
     require 'simplecov'
-    SimpleCov.start do
-        add_filter '/config/'
-        add_filter '/spec/'
-        add_filter '/test/'
-        add_filter '/vendor/'
+    SimpleCov.start 'rails' do
+      add_group "Models", "app/models"
+      add_group "Controllers", "app/controllers"
+      add_group "Helpers", "app/helpers"
 
-        add_group 'Controllers', 'app/controllers'
-        add_group 'Models', 'app/models'
-        add_group 'Helpers', 'app/helpers'
+      add_filter "app/controllers/users"
+      add_filter "app/channels"
+      add_filter "app/mailers"
+      add_filter "app/jobs"
     end
-    # This outputs the report to your public folder
-    # You will want to add this to .gitignore
-    SimpleCov.coverage_dir 'public/coverage'
     ```
 
-    Luego de esto, el archivo `spec/spec_helper.rb` debería verse parecido a lo siguiente (excluyendo líneas comentadas):
+    Luego de esto, el archivo `spec/rails_helper.rb` debería verse parecido a lo siguiente (excluyendo líneas comentadas):
 
     ```rb
-    require 'simplecov'
-    SimpleCov.start do
-        add_filter '/config/'
-        add_filter '/spec/'
-        add_filter '/test/'
-        add_filter '/vendor/'
+   require 'simplecov'
+    SimpleCov.start 'rails' do
+      add_group "Models", "app/models"
+      add_group "Controllers", "app/controllers"
+      add_group "Helpers", "app/helpers"
 
-        add_group 'Controllers', 'app/controllers'
-        add_group 'Models', 'app/models'
-        add_group 'Helpers', 'app/helpers'
+      add_filter "app/controllers/users"
+      add_filter "app/channels"
+      add_filter "app/mailers"
+      add_filter "app/jobs"
     end
     # This outputs the report to your public folder
     # You will want to add this to .gitignore
     SimpleCov.coverage_dir 'public/coverage'
 
-    RSpec.configure do |config|
-        .
-        .
-        .
-    end
+
+    # This file is copied to spec/ when you run 'rails generate rspec:install'
+    require 'spec_helper'
+    ENV['RAILS_ENV'] ||= 'test'
+    require File.expand_path('../config/environment', __dir__)
+    # Prevent database truncation if the environment is production
+    abort("The Rails environment is running in production mode!") if Rails.env.production?
+    require 'rspec/rails'
+    # Add additional requires below this line. Rails is not loaded until this point!
     ```
 
 4. Agregar la carpeta generada por `SimpleCov` al archivo `.gitignore` (si no hay un `.gitignore` en el repositorio, se debe crear uno). Para hacer esto, solamente es necesario agregar la siguiente línea al final del archivo `.gitignore`:
