@@ -1,0 +1,26 @@
+workspace {
+
+    model {
+        user = person "AuthUser" "A user of my CourseraApp"
+        invited = person "invited" "A user who sees my CourseraApp"
+        admin = person "Admin" "A admin who moderates my CourseraApp"
+        softwareSystem = softwareSystem "CourseraApp System" "Coursera App"
+        api = softwareSystem "external Api" "API who consumes my App"
+        s3 = softwareSystem "AWS S3 storage service" "stores images and videos"
+        invited -> softwareSystem "See courses, comments, users and his reviews"
+        user -> softwareSystem "Read all courses, comments, users and reviews. Also CRUD his own post, comments, request, reviews and chats"
+        admin -> softwareSystem "Manages post, comments, users, reviews, chats and request"
+        softwareSystem -> api "Consumes"
+        softwareSystem -> s3 "request images"
+    }
+
+    views {
+        systemContext softwareSystem {
+            include *
+            autolayout
+        }
+
+        theme default
+    }
+    
+}

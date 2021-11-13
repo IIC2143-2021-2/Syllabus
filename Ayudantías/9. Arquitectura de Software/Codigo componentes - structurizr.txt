@@ -1,0 +1,60 @@
+workspace {
+
+    model {
+        user = person "AuthUser" "A user of my CourseraApp"
+        softwareSystem = softwareSystem "CourseraApp System" "Coursera App"{
+            container = container "Web Server" "Allows users to view users, courses, comments and reviews" "Heroku: Rails App"{
+                router = Component "Router" "Matches Routes with actions" "Rails ApplicationControler"
+                view = component "View" "Single view of the webserver" "HTML"
+                sigin = component "Sign in Controller" "Allows Users to sign in to CourseraApp" "Rails Device"
+                profile = component "User profile Controller" "Shows profile of user" "Rails ApplicationController"
+                course = component "Courses Controller" "CRUD post" "Rails ApplicationController"
+                comments = component "Comments Controller" "CRUD comments" "Rails ApplicationController"
+                request = component "Request Controller" "CRUD request" "Rails ApplicationController"
+                review = component "Review Controller" "CRUD review" "Rails ApplicationController"
+                chat = component "Chat Controller" "CRUD chat" "Rails ApplicationController"
+                activerecord = component "ActiveRecord" "QueryInterface of Rails" "ActiveRecord"
+            }
+            admin_layout = container "Admin Panel" "Allows Admin to manage users, courses, comments, reviews, requests, chats and admins" "Rails Active Admin"
+            database = container "Database" "Steres users, comments, reviews, requests, chats and administrators" "Postgresql"
+        }
+        s3 = softwareSystem "AWS S3 storage service" "stores images and videos"
+        user -> router "request URL"
+        router -> view "view"
+        view -> sigin "request"
+        view -> profile "request"
+        view -> course "request"
+        view -> comments "request"
+        view -> request "request"
+        view -> review "request"
+        view -> chat "request"
+        profile -> s3 "request image or video of url xxx"
+        sigin -> activerecord "request"
+        profile -> activerecord "request"
+        course -> activerecord "request"
+        comments -> activerecord "request"
+        request -> activerecord "request"
+        review -> activerecord "request"
+        chat -> activerecord "request"
+        activerecord -> database "Reads from and writes to"
+    }
+
+    views {
+        styles {
+            element "Software System"{
+                background #1168bd
+                color #ffffff
+            }
+            element "Person"{
+                shape person
+                background #1168bd
+                color #ffffff
+            }
+            element "Container"{
+                background #1168bd
+                color #ffffff
+            }
+        }
+    }
+    
+}

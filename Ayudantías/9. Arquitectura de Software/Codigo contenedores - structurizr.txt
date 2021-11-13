@@ -1,0 +1,41 @@
+workspace {
+
+    model {
+        user = person "AuthUser" "A user of my CourseraApp"
+        invited = person "invited" "A user who sees my CourseraApp"
+        admin = person "Admin" "A admin who moderates my CourseraApp"
+        softwareSystem = softwareSystem "CourseraApp System" "Coursera App"{
+            container = container "Web Server" "Allows users to view users, courses, comments and reviews" "Heroku: Rails App"
+            admin_layout = container "Admin Panel" "Allows Admin to manage users, courses, comments, reviews, requests, chats and admins" "Rails Active Admin"
+            database = container "Database" "Steres users, comments, reviews, requests, chats and administrators" "Postgresql"
+        }
+        api = softwareSystem "external Api" "API who consumes my App"
+        s3 = softwareSystem "AWS S3 storage service" "stores images and videos"
+        invited -> container "view"
+        user -> container "uses"
+        admin -> admin_layout "manages"
+        admin_layout -> database "CRUD_info"
+        container -> database "reads_info"
+        container -> api "consults info"
+        container -> s3 "request images"
+    }
+
+    views {
+        styles {
+            element "Software System"{
+                background #1168bd
+                color #ffffff
+            }
+            element "Person"{
+                shape person
+                background #1168bd
+                color #ffffff
+            }
+            element "Container"{
+                background #1168bd
+                color #ffffff
+            }
+        }
+    }
+    
+}
